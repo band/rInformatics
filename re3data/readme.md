@@ -17,6 +17,13 @@ $ more repositories.xml
 
 `$ grep repositoryURL r3d100000020`
 
+4. more aggressive download and cleanup attempt
+
+```
+$ for i in $(head -99 repoIDlist.txt); do wget -O - http://service.re3data.org/api/beta/repository/$i |grep 'repositoryURL' >> repoURL1.txt; done
+
+$ sed -e :a -e 's/<[^>]*>//g;/</N;//ba' repoURL1.txt | sed 's/^[ \t]*//' > repoURL099.txt
+```
 
 
 
