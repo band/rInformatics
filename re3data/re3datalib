@@ -1,0 +1,11 @@
+# bash functions for re3data.org repository record analysis
+
+r3dlicenses()
+{
+	grep 'databaseLicenseName' r3d* | sed -e :a -e 's/<[^>]*>//g;/</N;//ba'
+}
+
+r3dmetadata()
+{
+	grep $1 r3d* | sed -e :a -e 's/<[^>]*>//g;/</N;//ba'
+}
