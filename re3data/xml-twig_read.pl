@@ -3,16 +3,19 @@
 use strict;
 use XML::Twig;
 
-my $file = 'files/camelids.xml';
+my $file = 'repositories_0324.xml';
 my $twig = XML::Twig->new();
 
 $twig->parsefile($file);
 
 my $root = $twig->root;
 
-foreach my $species ($root->children('species')){
-    print $species->first_child_text('common-name');
-    print ' (' . $species->att('name') . ') ';
-    print $species->first_child('conservation')->att('status');
+print $root;
+print "\n";
+
+foreach my $repo ($root->children('repository')){
+    print $repo->first_child_text('id');
+    print ' (' . $repo->first_child_text('name') . ') ';
+    print $repo->first_child('link')->att('rel');
     print "\n";
 }
