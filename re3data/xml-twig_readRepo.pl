@@ -3,7 +3,13 @@
 use strict;
 use XML::Twig;
 
-my $file = 'r3dSampleRecord.xml';
+# quit if there are not the correct number of command-line args
+if (($#ARGV + 1) != 1) {
+    print "\nUsage: xml-twigreadRepo.pl file_name\n";
+    exit;
+}
+
+my $file = $ARGV[0];
 my $twig = XML::Twig->new();
 
 $twig->parsefile($file);
@@ -14,9 +20,4 @@ print $root->first_child_text('repositoryName');
 print ' (' . $root->first_child_text('type') . ') ';
 print "\n";
 
-#foreach my $repo ($root->children('repository')){
-#    print $repo->first_child_text('id');
-#    print ' (' . $repo->first_child_text('name') . ') ';
 #    print $repo->first_child('link')->att('rel');
-#    print "\n";
-#}
