@@ -17,5 +17,6 @@ my $parser = XML::LibXML->new();
 my $doc    = $parser->parse_file($ARGV[0]);
 
 print $_->data . "\n" foreach ($doc->findnodes('//repository/contentType/text()'));
-
+print $_->data . "\n" foreach ($doc->findnodes('//repository/policy/policyName/text()'));
+print $_->data . "\n" foreach ($doc->findnodes('//repository/dataAccess/dataAccessType/text()'));
 
