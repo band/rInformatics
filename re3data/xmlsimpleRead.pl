@@ -7,6 +7,12 @@ use strict;
 use XML::Simple;
 use Data::Dumper;
 
-my $booklist = XMLin('booklist.xml');
+# check for the correct number of command-line args
+if (($#ARGV + 1) != 1) {
+    print "\nUsage: xmlsimpleRead.pl repoRecordFile_name\n";
+    exit;
+}
+
+my $booklist = XMLin($ARGV[0]);
 
 print Dumper($booklist);
