@@ -1,0 +1,17 @@
+2015-04-05
+
+1. trying to figure out how to read namespace prefix nodes
+http://www.perlmonks.org/?node_id=656568
+
+2015-04-06
+
+2. http://xmltwig.org/xmltwig/quick_ref.html
+
+2015-04-07
+
+3. solved the namespace prefix problem using Perl LibXML:
+   http://perl-xml.sourceforge.net/faq/#namespaces_xpath
+
+4. DEH suggests moving the r3drepoRecord to JSON and using JSON tools
+for query and display. The rationale is that the r3data record is a
+flat XML file, so does not make use of many XML features.
