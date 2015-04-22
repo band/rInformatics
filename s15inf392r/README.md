@@ -23,8 +23,8 @@ with: 'searchplos' (kinda general search) and 'plosword' (search by
 keyword). 'plosword' can generate a bar graph of the results of the
 keyword search.
 
-	To see all the functions in rplos (or any library) you can use
-	these commands:
+To see all the functions in rplos (or any library) you can use these
+commands:
 
      ls(getNamespace('rplos'),all.names=TRUE)
      ?rplos
