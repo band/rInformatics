@@ -1,4 +1,4 @@
-# rOpenSci packages: informatics exercise
+# rInformatics: Exercises using rOpenSci informatics packages
 
 ## Searching arXiv and PLoS
 
