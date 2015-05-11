@@ -11,11 +11,11 @@ $ more repositories.xml
 
  2. download a specific repository record
 
-`$ wget http://service.re3data.org/api/beta/repository/r3d100000020`
+`$ wget http://service.re3data.org/api/beta/repository/100000020`
 
  3. extract repositoryURL from repository record
 
-`$ grep repositoryURL r3d100000020`
+`$ grep repositoryURL 100000020`
 
 4. more aggressive download and cleanup attempt
 
