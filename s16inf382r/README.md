@@ -29,7 +29,12 @@ commands:
      ls(getNamespace('rplos'),all.names=TRUE)
      ?rplos
 
-1.2. The library aRxiv
+1.2. The library aRxiv provides a search function 'arxiv_search'. To
+find the first 10 articles with the string "linked data" in their
+titles use this command:
+
+      arxiv_search(query= 'ti:"linked data"')
+      [Note: double quotes needed in this library to search for phrases.]
 
 
 2. Capture the commands you use so you can reproduce the results, and
