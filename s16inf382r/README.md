@@ -41,14 +41,15 @@ titles use this command:
 share the steps you took. If you are using RStudio commands can be
 copied from the "History" window.
 
-
-3. If these exercises do not provide enough interest, I suggest that
+## Other options
+If these exercises do not provide enough interest, I suggest that
 you look at some of the existing rOpenSci libraries such as
   - the R interface for the World Bank climate data https://github.com/ropensci/rWBclimate
 
 A full list of rOpenSci packages can be found here: http://ropensci.org/packages/
 
-4. No matter what packages you examine provide an assessment of your
+## Document your work
+No matter what packages you examine provide an assessment of your
 experience with the exercise. Where did you have breakdowns, or run
 into trouble using the libraries and their functions? Where did you
 find or notice something interesting about the functions, the data,
