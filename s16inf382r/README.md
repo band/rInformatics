@@ -37,7 +37,7 @@ titles use this command:
       [Note: double quotes needed in this library to search for phrases.]
 
 
-2. Capture the commands you use so you can reproduce the results, and
+Capture the commands you use so you can reproduce the results, and
 share the steps you took. If you are using RStudio commands can be
 copied from the "History" window.
 
