@@ -44,11 +44,9 @@ copied from the "History" window.
 
 3. If these exercises do not provide enough interest, I suggest that
 you look at some of the existing rOpenSci libraries such as
-  - the R interface for the World Bank climate data
-    https://github.com/ropensci/rWBclimate
+  - the R interface for the World Bank climate data https://github.com/ropensci/rWBclimate
 
-A full list of rOpenSci packages can be found here:
-  http://ropensci.org/packages/
+A full list of rOpenSci packages can be found here: http://ropensci.org/packages/
 
 4. No matter what packages you examine provide an assessment of your
 experience with the exercise. Where did you have breakdowns, or run
