@@ -1,0 +1,4 @@
+2016-06-06
+this is a file
+to test git write access
+on Windows 10
